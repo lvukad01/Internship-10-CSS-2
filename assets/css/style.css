@@ -1,0 +1,143 @@
+body {
+  font-family: "Montserrat", Helvetica, sans-serif;
+  background-color: rgb(10, 24, 27);
+  color: #ffffff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  user-select: none;
+}
+
+.notice-board{
+    margin: 0;
+    padding: 0;
+}
+
+
+.notice-board__title {
+  font-size: 38px;
+  font-weight: 700;
+  height: 57.6px;
+  margin:0;
+  margin-bottom: 80px;
+  text-align: center;
+}
+
+.notice-board__subtitle {
+  font-size: 32px;
+  color:rgb(48, 206, 194);
+  font-weight: 700;
+  text-align: center;
+  height: 38px;
+  margin: 0;
+}
+
+.job-list__container {
+  box-sizing:border-box;
+  display:block;
+  font-family:"Fuse V.2 Display", Arial, sans-serif;
+  height:auto;
+  padding:0;
+  margin:0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.job-slider{
+    box-sizing:border-box;
+    cursor:grab;
+    gap: 32px;
+    display:flex;
+    height:auto;
+    padding: 0;
+    margin:0;
+    margin-top:50px;
+    padding-top:50px;
+    padding-left: 60px;
+
+}
+
+.job {
+  flex: 0 0 384px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 38px;
+  padding: 20px 40px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.job:hover{
+    transform: scale(1.05);
+}
+.job--gold {
+  height: fit-content;
+}
+
+.fortunaentertainmentgroup {
+  background-image: url("https://2021.days.dump.hr/img/fortunaentertainmentgroup.2bbf732d.svg");
+}
+.ericssonnikolatesla{
+ background-image: url("https://2021.days.dump.hr/img/ericssonnikolatesla.2fd8c0d2.svg");
+
+}
+
+
+.background-logo {
+  width: 168px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  margin-bottom: 32px;
+}
+
+.job__name span {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.job__location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 24px;
+  opacity: 0.8;
+}
+
+.job__location-icon {
+  width: 16px;
+  height: 16px;
+}
+
+.job__description {
+  font-size: 17px;
+  line-height: 1.2;
+  opacity: 0.85;
+  margin:0;
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.button-primary {
+  margin:0;
+  padding:0;
+  height: 42px;
+  width:154px;
+  margin-top: 32px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius:10px;
+  background-color: rgb(48, 206, 194);
+  color: black;
+  position: relative;
+  width: 154px;
+}
+
