@@ -20,7 +20,9 @@ img {
   user-select: none;
 }
 
-
+.notice-board{
+    text-align: center;
+}
 .notice-board__title {
   font-size: 38px;
   font-weight: 700;
@@ -48,20 +50,21 @@ img {
   gap: 32px;
   cursor: grab;
   height: auto;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 60px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .job {
-  flex: 0 0 384px;
+  flex: 0 0 464px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 38px;
   padding: 20px 40px 30px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
+  text-align: left;
 }
 
 .job:hover {
@@ -164,4 +167,24 @@ img {
   background-color: rgb(48, 206, 194);
   color: black;
   position: relative;
+}
+
+@media (max-width: 764px){
+  .notice-board__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+ .notice-board__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.job-slider{
+    padding-left: 30px;
+}
+.button-primary{
+    margin-top: 5px;
+}
+.job{
+  padding: 20px 20px 30px;
+}
 }
