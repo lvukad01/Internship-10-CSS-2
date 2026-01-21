@@ -402,6 +402,90 @@ h1 {
   position: relative;
 }
 
+
+.app-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 120px ;
+  padding-left:80px;
+  padding-right: 10px;
+  position: relative;
+}
+
+.app-info__title {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width:300px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width:300px;
+  position: relative;
+  margin-top: 48px;
+}
+
+.info__icon {
+  width: 60px;
+  height: 60px;
+  left:-40px;
+  top:-24px;
+  z-index: -1;
+  position: absolute;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: 700;
+  width:350px;
+}
+
+.info__description {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.app-info__cta {
+  margin-top: 32px;
+  width: fit-content;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: rgb(48, 206, 194);
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  display: flex;
+  position: sticky;
+  top:0px;
+  justify-content: center;
+  align-self: flex-start;
+  width: 900px;
+  height: 670px;
+}
+
 @media (max-width: 764px){
   .notice-board__title {
   font-size: 36px;
@@ -421,11 +505,70 @@ h1 {
 .job{
   padding: 20px 20px 30px;
 }
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .image-wrapper {
+    order: -1;        
+    position: static; 
+    width: 400px;
+    height: 329px;
+  }
+    .benefits {
+    width: 280px;
+    margin:0px 50px; 
+  }
+
+  .info{
+    font-size:20px;
+    margin-top: 20px;
+  }
+  .info__title {
+    font-size: 22px;
+    width: 100%;
+  }
+
+  .app-info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .info__icon {
+  width: 40px;
+  height: 40px;
+  left:-20px;
+  top:-12px;
 }
-.app-info {
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .app-info{
+    padding:120px 205px;
+  }
+  .info {
+  width:250px;
+}
+.info__icon {
+  width: 40px;
+  height: 40px;
+  left:-20px;
+  top:-12px;
+}
+  .info__title{
+    width:150px;
+  }
+  .image-wrapper {
+  width: 502px;
+  height: 412px;
+}
+
+}
+
+/*.app-info {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 120px 24px;
+  padding: 120px 205px;
   position: relative;
 }
 
@@ -453,11 +596,16 @@ h1 {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  position: relative;
 }
 
 .info__icon {
   width: 40px;
   height: 40px;
+  left:-24px;
+  top:-8px;
+  z-index: -1;
+  position: absolute;
 }
 
 .info__title {
@@ -491,5 +639,5 @@ h1 {
   justify-content: center;
   align-self: flex-start;
   width: 502px;
-height: 412px;
-}
+  height: 412px;
+}*/
