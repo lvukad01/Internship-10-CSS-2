@@ -253,8 +253,10 @@ h1 {
     width: 100%;
   }
 }
-
-* .notice-board__title {
+.notice-board{
+    text-align: center;
+}
+.notice-board__title {
   font-size: 38px;
   font-weight: 700;
   margin-bottom: 80px;
@@ -281,20 +283,21 @@ h1 {
   gap: 32px;
   cursor: grab;
   height: auto;
-  padding-top: 50px;
+  padding-top: 10px;
   padding-left: 60px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
 .job {
-  flex: 0 0 384px;
+  flex: 0 0 464px;
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 38px;
   padding: 20px 40px 30px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
+  text-align: left;
 }
 
 .job:hover {
@@ -397,4 +400,96 @@ h1 {
   background-color: rgb(48, 206, 194);
   color: black;
   position: relative;
+}
+
+@media (max-width: 764px){
+  .notice-board__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+ .notice-board__subtitle {
+  font-size: 24px;
+  font-weight: 700;
+}
+.job-slider{
+    padding-left: 30px;
+    margin:0;
+}
+.button-primary{
+    margin-top: 5px;
+}
+.job{
+  padding: 20px 20px 30px;
+}
+}
+.app-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 24px;
+  position: relative;
+}
+
+.app-info__title {
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.content-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info__icon {
+  width: 40px;
+  height: 40px;
+}
+
+.info__title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.info__description {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.app-info__cta {
+  margin-top: 32px;
+  width: fit-content;
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 12px;
+  background-color: rgb(48, 206, 194);
+  color: #000;
+  border: none;
+  cursor: pointer;
+}
+
+.image-wrapper {
+  display: flex;
+  position: sticky;
+  top:0px;
+  justify-content: center;
+  align-self: flex-start;
+  width: 502px;
+height: 412px;
 }
