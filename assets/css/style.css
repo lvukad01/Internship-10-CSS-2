@@ -4,6 +4,9 @@
   box-sizing: border-box;
 }
 
+:root {
+  --cyan: #30cec2;
+}
 body {
   font-family: "Montserrat", Helvetica, sans-serif;
   background-color: rgb(10, 24, 27);
@@ -20,6 +23,236 @@ img {
   user-select: none;
 }
 
+.header__background-image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.header__background-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.header-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  height: 100vh;
+  padding: 210px 100px 0 100px;
+  position: relative;
+  z-index: 1;
+  overflow-y: hidden;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+.nav {
+  padding: 25px 0;
+  padding-top: 16px;
+}
+.nav-content ul li {
+  list-style: none;
+  margin-left: 50px;
+}
+.nav-content ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  position: relative;
+}
+.nav-content ul li a::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: var(--cyan);
+  left: 0;
+  bottom: -3px;
+}
+.nav-content ul li a:hover::after {
+  width: 100%;
+  transition: 0.3s;
+}
+.nav-content {
+  max-width: 1440px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+  padding: 0 100px;
+  align-items: center;
+}
+.nav-content ul {
+  display: flex;
+}
+.nav-content img {
+  height: 35px;
+}
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 100%;
+  font-family: "Fuse V\.2 Display", Arial, sans-serif;
+}
+.header__content {
+  color: #fff;
+  font-family: "Fuse V.2 Display", Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 77px;
+  -ms-flex-item-align: center;
+}
+.header__content ol {
+  list-style: none;
+  --height: 77px;
+  height: var(--height);
+  margin-left: 0.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  width: fit-content;
+}
+.header__content ol li {
+  display: inline-block;
+  height: fit-content;
+}
+
+.header__content ol li span {
+  -webkit-text-fill-color: transparent;
+  background: var(--cyan);
+  -webkit-background-clip: text;
+  white-space: nowrap;
+  border-right: 0.4rem solid var(--cyan);
+  animation:
+    cursor 0.8s step-end infinite,
+    typewriter steps(6) 3s infinite alternate;
+  display: inline-block;
+  width: 0%;
+}
+header h1 {
+  font-size: 64px;
+}
+
+#join-button {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: white;
+}
+
+#sign-button:hover {
+  background-color: #35e5d8;
+}
+
+.header__bottom-wrapper {
+  justify-self: flex-end;
+  margin-bottom: 10rem;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+.header__links button {
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  padding: 12px 32px;
+  border-radius: 15px;
+  background-color: var(--cyan);
+  color: #0a181b;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  outline: 0;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.header__title {
+  max-width: fit-content;
+}
+.header__title > span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.header__subtitle {
+  margin-top: 16px;
+  color: hsla(0, 0%, 100%, 0.8);
+  font-family: Fuse V\.2 Display;
+  font-size: 20px;
+  line-height: 30px;
+}
+.header__links {
+  margin-top: 16px;
+}
+
+.header__bottom-content {
+  display: flex;
+  align-items: center;
+  height: 152px;
+  border-radius: 27px;
+  padding: 0px 24px;
+  gap: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+.header__bottom-content p {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 26px;
+}
+.header__bottom-content span {
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 26px;
+}
+.header-button__watch {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  border-radius: 15px;
+  padding: 12px 32px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 24px;
+}
+.header__bottom-content h1 {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+}
+
+.header__bottom-img img {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typewriter {
+  70%,
+  100% {
+    width: 100%;
+  }
+}
 .notice-board{
     text-align: center;
 }
