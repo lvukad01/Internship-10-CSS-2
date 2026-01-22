@@ -692,6 +692,76 @@ h1 {
     transform: translate3d(-50%, 0, 0);
   }
 }
+#contact {
+    max-width: 1440px;
+    padding: 172px 205px 90px 190px;
+    margin: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.contact__title{
+  font-size: 45px;
+  line-height: 2;
+}
+.contact__planes{
+    width: auto;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    z-index: -1;
+}
+.contact__text {
+    margin-bottom: 48px;
+}
+
+.contact__buttons{
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.contact__button--facebook {
+    background: #1e88e5;
+}
+.contact__button--mail {
+    background: #30cec2;
+    color: #0a181b;
+}
+.contact__button {
+    width: auto;
+    padding: 12px 24px;
+    margin-right: 16px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+.button, .contact__button, .contact__button--mail {
+    -webkit-transition: background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+    transition: background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out;
+    transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
+}
+.contact__button-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+.contact__question{
+
+}
 @media (max-width: 764px){
   .notice-board__title {
   font-size: 36px;
