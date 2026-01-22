@@ -528,6 +528,7 @@ h1 {
   align-items: flex-start;
   gap: 160px;
   width: 900vw;
+  flex-shrink: 0;
 }
 
 .grid {
@@ -679,19 +680,15 @@ h1 {
 
 .loop-track {
   display: flex;
-  width: max-content;
-  will-change: transform;
-  animation: loopX 45s linear infinite;
+  width: calc(2 * 4000px); 
+  animation: loopX 25s linear infinite;
 }
 
 @keyframes loopX {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-  to {
-    transform: translate3d(-50%, 0, 0);
-  }
+  from { transform: translateX(0); }
+  to   { transform: translateX(-4000px); }
 }
+
 #contact {
     max-width: 1440px;
     padding: 172px 205px 90px 190px;
@@ -759,9 +756,7 @@ h1 {
     height: 24px;
     margin-right: 8px;
 }
-.contact__question{
 
-}
 @media (max-width: 764px){
   .notice-board__title {
   font-size: 36px;
@@ -823,11 +818,20 @@ h1 {
     animation-duration: 26s; 
   }
   .grid__container {
-  width: 1400vw; 
+  width: 900vw; 
 }
 .grid {
-  grid-template-rows: 173px;
+  grid-template-columns: 1fr .3fr 1fr 1fr .3fr 1fr;
+  grid-template-rows: 123px 123px;
+  gap:10px 12px;
 }
+.year-line{
+  height:300px;
+}
+.year-break {
+  justify-content: flex-start;
+}
+
 }
 
 
