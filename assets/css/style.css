@@ -841,7 +841,6 @@ h2.sponsor-category-description {
 .grid__container {
   display: flex;
   align-items: flex-start;
-  gap: 160px;
   width: 900vw;
   flex-shrink: 0;
 }
@@ -1210,6 +1209,9 @@ figure.other {
 .year-break {
   justify-content: flex-start;
 }
+.statistic h4{
+  margin:0;
+}
 
 #contact{
     max-width: 1440px;
@@ -1254,7 +1256,13 @@ figure.other {
     margin:0;
     filter: brightness(0) invert(1);
 }
-
 }
-
+@media (min-width: 768px) and (max-width: 1024px) {
+  .gold-sponsor-image{
+    width:350px;
+  }
+  .image-wrapper{
+    width:200px;
+  }
+}
 
