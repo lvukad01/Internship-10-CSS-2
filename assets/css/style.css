@@ -297,7 +297,6 @@ h1 {
 .general-gold figcaption {
     margin-left: 61px;
     color: rgba(0,0,0,.65);
-    font-family: Fuse V\.2 Display,Arial,sans-serif;
     font-size: 14px;
     line-height: 24px;
 }
@@ -326,7 +325,7 @@ h1 {
     border-radius: 8px;
     margin-top: 25px;
 }
-.sponsor-title__name{
+.sponsor-title__name {
     display: block;
     color: #fff;
     font-size: 28px;
@@ -334,6 +333,7 @@ h1 {
     line-height: 38px;
     font-weight: 800;
 }
+
 h4 {
     display: block;
     margin-block-start: 1.33em;
@@ -415,19 +415,19 @@ section.sponsor-category{
     flex-wrap: wrap;
     width: 100%;
     margin-bottom: 100px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
     justify-content: center;
     
 }
+
 figure.other {
     width: 14%;
     height: 100px;
     margin-left: 7%;
     margin-bottom: 60px;
+}
+figure.other:nth-of-type(5n+1) {
+    margin-left: 0;
 }
 figure {
     display: block;
@@ -442,11 +442,7 @@ figure {
   color: rgb(10, 24, 27);
     
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: pointer;
-    text-decoration: none;
-}
+
 .background-logo{
     width: 160px;
     height: 140px;
@@ -458,6 +454,7 @@ figure.other{
     width: 14%;
     height: 100px;
     margin-left: 7%;
+    margin-right: 0;
     margin-bottom: 60px;
 }
 figure.other a{
@@ -474,12 +471,7 @@ section.sponsor-category {
     justify-content: center;
 }
 
-figure.zagrebačkabanka 
-.background-logo {
-    background-size: 250px;
-    background-position-y: -22px;
 
-}
 .background-logo{
     width: 160px;
     height: 140px;
@@ -491,6 +483,52 @@ figure.zagrebačkabanka
 {
   width:300px;
 }
+
+figure.other:nth-child(2n) {
+  transform: translateY(10px) scale(1.15);
+}
+
+figure.other:nth-child(3n) {
+  transform: translateY(-8px) scale(1.05);
+}
+
+figure.other:nth-child(4n) {
+  transform: translateY(15px) scale(1.2);
+}
+figure.other {
+  opacity: 0;
+  animation: fadeLoop 8s ease-in-out infinite;
+}
+
+@keyframes fadeLoop {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  20% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+figure.other:nth-child(1) { animation-delay: 0s; }
+figure.other:nth-child(4) { animation-delay: 1s; }
+figure.other:nth-child(6) { animation-delay: 2s; }
+figure.other:nth-child(3) { animation-delay: 2.3s; }
+figure.other:nth-child(5) { animation-delay: 5s; }
+figure.other:nth-child(2) { animation-delay: 3s; }
+
 .notice-board{
     text-align: center;
 }
