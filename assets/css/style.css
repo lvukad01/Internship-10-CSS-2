@@ -369,31 +369,65 @@ h4 {
     margin-top: 160px;
 }
 .text--underline {
-    overflow: hidden;
     position: relative;
-    display: block;
-    width: fit-content;
+    display: inline-block;
     cursor: pointer;
-    position: relative;
-    z-index: 1;
 }
-.text--underline:hover::after {
-    position: absolute;
+
+.text--underline::after {
     content: "";
-    right: 0;
-    bottom: 5px;
+    position: absolute;
     left: 0;
+    bottom: 5px;
+    width: 100%;
     height: 4px;
-    display: block;
     background-color: #5ec4bc;
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
     border-radius: 2px;
-    -webkit-transition: -webkit-transform .2s ease-in-out;
-    transition: -webkit-transform .2s ease-in-out;
-    transition: transform .2s ease-in-out;
-    transition: transform .2s ease-in-out,-webkit-transform .2s ease-in-out;
-    z-index: 0;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.25s ease-in-out;
+}
+
+.text--underline:hover::after {
+    transform: scaleX(1);
+}
+
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+section>h2.silver-title {
+    margin-top: 120px;
+    margin-bottom: 90px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #30cec2;
+}
+
+section.sponsor-category{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    
+}
+figure.other {
+    width: 14%;
+    height: 100px;
+    margin-left: 7%;
+    margin-bottom: 60px;
 }
 figure {
     display: block;
@@ -401,6 +435,61 @@ figure {
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+.other{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  color: rgb(10, 24, 27);
+    
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+}
+.background-logo{
+    width: 160px;
+    height: 140px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+figure.other{
+    width: 14%;
+    height: 100px;
+    margin-left: 7%;
+    margin-bottom: 60px;
+}
+figure.other a{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section.sponsor-category {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+figure.zagrebačkabanka 
+.background-logo {
+    background-size: 250px;
+    background-position-y: -22px;
+
+}
+.background-logo{
+    width: 160px;
+    height: 140px;
+    background-position: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.other .zagrebačkabanka .background-logo
+{
+  width:300px;
 }
 .notice-board{
     text-align: center;
@@ -416,6 +505,14 @@ figure {
   color: rgb(48, 206, 194);
   font-weight: 700;
 }
+h2.sponsor-category-description {
+    margin-top: 45px;
+    margin-bottom: 75px;
+    text-align: center;
+    font-size: 40px;
+    color: #30cec2;
+}
+
 
 .job-list__container {
   display: block;
@@ -515,6 +612,39 @@ figure {
 }
 .extensionengine {
   background-image: url("https://2021.days.dump.hr/img/extensionengine.74f96ea3.png");
+}
+.rimac {
+  background-image: url("https://2021.days.dump.hr/img/rimacautomobili.e882c49b.svg");
+}
+.fesb {
+  background-image: url("https://2021.days.dump.hr/img/fesb.c7baa797.svg");
+}
+.split {
+  background-image: url("https://2021.days.dump.hr/img/gradsplit.d7a56d64.svg");
+}
+.hiperprodukcija {
+  background-image: url("https://2021.days.dump.hr/img/hiperprodukcija.9c8d3dfc.svg");
+}
+.studentskizbor {
+  background-image: url("https://2021.days.dump.hr/img/studentskizbor.fcf92f02.svg");
+}
+.sveuciliste {
+  background-image: url("https://2021.days.dump.hr/img/sveučilišteusplitu.1aafa872.svg");
+}
+.bug {
+  background-image: url("https://2021.days.dump.hr/img/bug.33bb0fd4.svg");
+}
+.netokracija {
+  background-image: url("https://2021.days.dump.hr/img/netokracija.fcb66757.svg");
+}
+.radiokampus {
+  background-image: url("https://2021.days.dump.hr/img/radiokampus.1f8eee82.png");
+}
+.splittechcity {
+  background-image: url("https://2021.days.dump.hr/img/splittechcity.3594924d.svg");
+}
+.ultrasplit {
+  background-image: url("https://2021.days.dump.hr/img/ultrasplit.d71f5757.png");
 }
 .job__name span {
   font-size: 24px;
