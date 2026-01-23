@@ -506,7 +506,7 @@ h1 {
 
 
 .gallery-container {
-  padding: 140px 80px;
+  padding: 140px 10px;
   overflow: hidden;
 }
 
@@ -694,7 +694,7 @@ h1 {
     padding: 172px 205px 90px 190px;
     margin: auto;
     position: relative;
-    margin-top: 100px;
+    margin-top: 20px;
 }
 .contact__title{
   font-size: 45px;
@@ -720,22 +720,11 @@ h1 {
 .contact__button--facebook {
     background: #1e88e5;
 }
-.contact__button--mail {
-    background: #30cec2;
-    color: #0a181b;
-}
 .contact__button {
     width: auto;
     padding: 12px 24px;
     margin-right: 16px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
     display: inline-flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
     font-size: 16px;
     line-height: 24px;
@@ -744,6 +733,10 @@ h1 {
     text-decoration: none;
     border-radius: 15px;
     margin-bottom: 16px;
+}
+.contact__button--mail {
+    background: #30cec2;
+    color: black;
 }
 .button, .contact__button, .contact__button--mail {
     -webkit-transition: background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
@@ -756,7 +749,46 @@ h1 {
     height: 24px;
     margin-right: 8px;
 }
+footer {
+  padding: 0 16px 16px;
+  max-width: 1440px;
+  margin: auto;
+}
 
+.footer__container {
+  padding: 59px 68px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-radius: 20px;
+  background: hsla(0,0%,100%,.03);
+}
+
+.footer__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__social {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer__social a {
+  display: inline-flex;
+  color:rgb(0, 0, 238)
+}
+.footer__logo{
+  padding-right: 20px;
+}
+.footer__icon {
+    margin-right: 28px;
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
 @media (max-width: 764px){
   .notice-board__title {
   font-size: 36px;
