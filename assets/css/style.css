@@ -1109,6 +1109,49 @@ footer {
     filter: brightness(0) invert(1);
 }
 @media (max-width: 764px){
+  .container{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.general-gold-wrapper 
+.general-gold.general-gold {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.general-gold {
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin:0;
+}
+.gold-sponsor-image {
+    height: unset;
+    width: 100%;
+    margin: 0 ;
+    display: block;
+    border-radius: 30px;
+}
+figure.general-gold figcaption{
+    margin-left: 0;
+}
+figure.other:first-child {
+    margin-top: 50px;
+}
+figure.other {
+    width: 45%;
+    margin-left: 5%;
+    margin-bottom: 90px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    width: 100%;
+    margin-left: 0;
+}
+.background-logo {
+    margin: auto;
+}
   .notice-board__title {
   font-size: 36px;
   font-weight: 700;
@@ -1182,48 +1225,20 @@ footer {
 .year-break {
   justify-content: flex-start;
 }
-.container{
-  margin-left: 40px;
-  margin-right: 40px;
-}
-.general-gold-wrapper 
-.general-gold.general-gold {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-}
-.general-gold {
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-    margin:0;
-}
-.gold-sponsor-image {
-    height: unset;
-    width: 100%;
-    margin: 0 ;
-    display: block;
-    border-radius: 30px;
-}
-figure.general-gold figcaption{
-    margin-left: 0;
-}
-figure.other:first-child {
-    margin-top: 50px;
-}
-figure.other {
-    width: 45%;
-    margin-left: 5%;
-    margin-bottom: 90px;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-    width: 100%;
-    margin-left: 0;
-}
-.background-logo {
+
+#contact{
+    max-width: 1440px;
+    padding: 60px 23px 270px 23px;
     margin: auto;
+    position: relative;
+    margin-top: 100px;
+}
+.contact__planes {
+    width: 400px;
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+    z-index: -1;
 }
 }
 
