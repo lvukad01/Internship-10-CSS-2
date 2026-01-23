@@ -354,9 +354,6 @@ h4 {
 }
 
 .general-gold-wrapper:nth-of-type(2n) .general-gold {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-    -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
 .general-gold-wrapper:nth-of-type(2n) 
@@ -437,8 +434,7 @@ figure {
     margin-inline-end: 40px;
 }
 .other{
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+  transform: scale(1.2);
   color: rgb(10, 24, 27);
     
 }
@@ -855,7 +851,6 @@ h2.sponsor-category-description {
   grid-template-columns: 1fr .3fr 1fr 1fr .3fr 1fr;
   grid-auto-rows: 215px;
   gap: 24px;
-  -webkit-box-pack:center;
   justify-content: center;
 }
 
@@ -1031,9 +1026,6 @@ h2.sponsor-category-description {
 }
 
 .contact__buttons{
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
     flex-direction: row;
 }
 .contact__button--facebook {
@@ -1058,7 +1050,6 @@ h2.sponsor-category-description {
     color: black;
 }
 .button, .contact__button, .contact__button--mail {
-    -webkit-transition: background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
     transition: background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
     transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out;
     transition: box-shadow .2s ease-in-out,background-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
@@ -1105,7 +1096,6 @@ footer {
 }
 .footer__icon {
     margin-right: 28px;
-    -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1);
 }
 @media (max-width: 764px){
@@ -1115,15 +1105,11 @@ footer {
 }
 .general-gold-wrapper 
 .general-gold.general-gold {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
 }
 .general-gold {
     display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
     justify-content: flex-start;
     margin:0;
 }
@@ -1144,7 +1130,6 @@ figure.other {
     width: 45%;
     margin-left: 5%;
     margin-bottom: 90px;
-    -webkit-transition: all .5s;
     transition: all .5s;
     width: 100%;
     margin-left: 0;
@@ -1240,6 +1225,36 @@ figure.other {
     right: 0;
     z-index: -1;
 }
+.footer__container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 24px;
+    border-radius: 20px;
+    background: hsla(0,0%,100%,.03);
+}
+.footer__content{
+  flex-direction:column;
+  padding:auto;
+}
+
+.footer__social{
+    align-items: center;
+    padding-top: 26px;
+}
+.footer__social a{
+  padding-right: 15px;
+}
+.footer__logo {
+    width: 90px;
+    height: auto;
+}
+.footer__icon{
+    padding-right: 5px;
+    margin:0;
+    filter: brightness(0) invert(1);
+}
+
 }
 
 
