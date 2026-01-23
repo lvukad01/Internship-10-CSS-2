@@ -567,8 +567,13 @@ h2.sponsor-category-description {
   padding-left: 60px;
   margin-top: 50px;
   margin-bottom: 100px;
+  overflow-x: auto;          
+  scrollbar-width: none;    
+  -ms-overflow-style: none; 
 }
-
+.job-slider::-webkit-scrollbar {
+  display: none;              
+}
 .job {
   flex: 0 0 464px;
   background-color: rgba(255, 255, 255, 0.05);
