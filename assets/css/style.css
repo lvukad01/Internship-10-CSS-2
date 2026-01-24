@@ -1,4 +1,5 @@
 @import "header.css";
+@import "conference.css";
 @import "sponsors.css";
 @import "board.css";
 @import "gallery.css";
@@ -12,6 +13,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 
 :root {
   --cyan: #30cec2;
