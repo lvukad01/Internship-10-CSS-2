@@ -1,5 +1,12 @@
 @import "header.css";
 @import "conference.css";
+@import "sponsors.css";
+@import "board.css";
+@import "gallery.css";
+@import "app_info.css";
+@import "contact.css";
+@import "footer.css";
+
 
 * {
   margin: 0;
@@ -26,6 +33,5 @@ img {
   display: block;
   user-select: none;
 }
-
 
 
