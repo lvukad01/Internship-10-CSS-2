@@ -1,0 +1,117 @@
+@import url(https://db.onlinewebfonts.com/c/452ec27decf4369db2b93619854b5638?family=FuseV.2Display-Regular);
+.conference {
+  padding-left: clamp(20px, 14vw, 205px);
+  padding-right: clamp(20px, 7vw, 100px);
+  width: 100%;
+  max-width: 1440px;
+  min-height: 480px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.fade-content {
+  max-width: 760px;
+  height: clamp(300px, 40vw, 480px);
+  position: relative;
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.bg-fade {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0;
+  inset: 0;
+  animation: fade-zoom 12s infinite;
+  border-radius: 60px;
+}
+.fade-1 {
+  background-image: url("/assets/img/conference-img-1.jpg");
+  animation-delay: 0s;
+}
+.fade-2 {
+  background-image: url("/assets/img/conference-img-2.jpg");
+  animation-delay: 6s;
+}
+
+@keyframes fade-zoom {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.conference-content h1 {
+  font-size: clamp(28px, 4vw, 48px);
+  line-height: clamp(36px, 5vw, 58px);
+}
+.conference-content p {
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(20px, 2vw, 24px);
+  font-weight: 400;
+  color: hsla(0, 0%, 100%, 0.8);
+}
+.conference-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 505px;
+  margin-left: clamp(0rem, 20vw, 20rem);
+  font-family: "FuseV.2Display-Regular";
+}
+.conference__visual-1 {
+  display: inline-block;
+  width: clamp(200px, 30vw, 442px);
+  height: clamp(200px, 30vw, 442px);
+  position: absolute;
+  bottom: clamp(-150px, -6vw, -200px);
+  left: clamp(20px, 8vw, 120px);
+  z-index: -1;
+}
+.conference__visual-2 {
+  display: inline-block;
+  width: clamp(200px, 30vw, 426px);
+  height: clamp(200px, 30vw, 426px);
+  position: absolute;
+  bottom: clamp(-250px, -15vw, -300px);
+  right: clamp(20px, 9vw, 129px);
+  z-index: -1;
+}
+@media screen and (max-width: 1160px) {
+  .conference__visual-1,
+  .conference__visual-2 {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .conference {
+    padding-left: clamp(20px, 5vw, 40px);
+    padding-right: clamp(20px, 5vw, 40px);
+  }
+
+  .fade-content {
+    height: clamp(250px, 35vw, 350px);
+    margin-bottom: 2rem;
+  }
+
+  .conference-content {
+    max-width: 100%;
+  }
+
+  .conference-content h1 {
+    font-size: clamp(24px, 6vw, 36px);
+    line-height: clamp(32px, 7vw, 44px);
+  }
+
+  .conference-content p {
+    font-size: clamp(14px, 3.5vw, 16px);
+    line-height: clamp(20px, 4.5vw, 24px);
+  }
+}
