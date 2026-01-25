@@ -24,9 +24,15 @@
       <div class="header-container">
         <div class="nav-wrapper">
           <div class="nav">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
             <div class="nav-content">
-              <a href=""><img src="/assets/img/logotype-white.png" alt="" /></a>
-              <ul>
+              <a href="" class="nav-logo"><img src="/assets/img/logotype-white.png" alt="" /></a>
+              <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+              <ul class="nav-menu">
                 <li>
                   <a href="#conference" class="navbar-link">Konferencija</a>
                 </li>
@@ -34,6 +40,19 @@
                 <li><a href="#sponsors" class="navbar-link">Sponzori</a></li>
                 <li><a href="#contact" class="navbar-link">Kontakt</a></li>
               </ul>
+            </div>
+            <div class="mobile-menu-overlay">
+              <div class="mobile-menu-header">
+                <a href=""><img src="/assets/img/logotype-white.png" alt="" /></a>
+                <label for="menu-toggle" class="mobile-close">×</label>
+              </div>
+              <div class="mobile-menu-content">
+                <label for="menu-toggle"><a href="#conference" class="mobile-menu-link">Konferencija</a></label>
+                <label for="menu-toggle"><a href="#schedule" class="mobile-menu-link">Raspored</a></label>
+                <label for="menu-toggle"><a href="#sponsors" class="mobile-menu-link">Sponzori</a></label>
+                <label for="menu-toggle"><a href="#contact" class="mobile-menu-link">Kontakt</a></label>
+                <button class="mobile-menu-button">Prijavi se</button>
+              </div>
             </div>
           </div>
         </div>

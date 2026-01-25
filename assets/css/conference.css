@@ -90,6 +90,12 @@
   }
 }
 
+@media (max-width: 800px) {
+  .conference-content {
+    margin-left: 0;
+  }
+}
+
 @media (max-width: 768px) {
   .conference {
     padding-left: clamp(20px, 5vw, 40px);

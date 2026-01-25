@@ -4,15 +4,16 @@
   font-family: "FuseV.2Display-Regular";
   margin: 0 auto;
   max-width: 1030px;
+  padding: 0 clamp(20px, 3vw, 40px);
 }
 
 section > h1 {
-  margin-top: 100px;
-  margin-bottom: 50px;
+  margin-top: clamp(60px, 8vw, 100px);
+  margin-bottom: clamp(30px, 4vw, 50px);
   color: #fff;
   font-weight: 800;
-  line-height: 48px;
-  font-size: 40px;
+  line-height: clamp(36px, 5vw, 48px);
+  font-size: clamp(28px, 4vw, 40px);
   text-align: center;
 }
 
@@ -23,15 +24,15 @@ section > h1 {
 }
 
 .schedule-day-button {
-  width: 88px;
-  height: 112px;
+  width: clamp(70px, 7vw, 88px);
+  height: clamp(90px, 10vw, 112px);
   background-color: #0a181b;
   color: #fff;
   border: 2px solid #fff;
-  font-size: 32px;
-  line-height: 38px;
+  font-size: clamp(24px, 3vw, 32px);
+  line-height: clamp(30px, 3.5vw, 38px);
   border-radius: 15px;
-  margin: 0 8px 10px 8px;
+  margin: 0 clamp(6px, 1vw, 8px) clamp(8px, 1.2vw, 10px) clamp(6px, 1vw, 8px);
   transition: all 0.5s ease-in-out;
   cursor: pointer;
   outline: none;
@@ -39,12 +40,12 @@ section > h1 {
 }
 
 .schedule-day-button p {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(20px, 2vw, 24px);
   color: #fff;
-  padding: 8px 16px;
+  padding: clamp(6px, 1vw, 8px) clamp(12px, 1.5vw, 16px);
   font-weight: 300;
-  margin: 0 4px;
+  margin: 0 clamp(2px, 0.5vw, 4px);
 }
 
 .schedule-day-button:hover {
@@ -66,17 +67,17 @@ section > h1 {
 .schedule-type__button {
   white-space: nowrap;
   cursor: pointer;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: clamp(14px, 1.5vw, 16px);
+  line-height: clamp(20px, 2vw, 24px);
   color: #fff;
-  padding: 8px 16px;
+  padding: clamp(6px, 1vw, 8px) clamp(12px, 1.5vw, 16px);
   border: 2px solid #fff;
   border-radius: 24px;
   font-weight: 300;
   transition:
     color 0.2s ease-in-out,
     border 0.2s ease-in-out;
-  margin: 0 4px;
+  margin: 0 clamp(2px, 0.5vw, 4px);
 }
 
 .schedule-type__button:hover {
@@ -98,58 +99,60 @@ section > h1 {
 .event-item--break {
   display: flex;
   width: 100%;
-  padding: 0 20px;
+  padding: 0 clamp(12px, 2vw, 20px);
 }
 
 .event-item {
   width: 100%;
   background-color: hsla(0, 0%, 100%, 0.05);
-  border-radius: 20px;
-  padding: 20px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-radius: clamp(15px, 2vw, 20px);
+  padding: clamp(16px, 2vw, 20px);
+  padding-top: clamp(18px, 2.2vw, 24px);
+  padding-bottom: clamp(18px, 2.2vw, 24px);
   box-sizing: border-box;
 }
 
 .schedule-container .time {
   padding-top: 4px;
-  font-size: 16px;
+  font-size: clamp(14px, 1.5vw, 16px);
   color: hsla(0, 0%, 100%, 0.8);
-  line-height: 24px;
+  line-height: clamp(20px, 2vw, 24px);
   font-weight: 300;
   display: flex;
   align-items: flex-start;
   align-self: flex-start;
-  margin-right: 12px;
+  margin-right: clamp(8px, 1.2vw, 12px);
+  min-width: clamp(80px, 10vw, 120px);
 }
 
 .schedule-container .content {
   display: inline-flex;
   align-items: flex-start;
   flex-direction: column;
-  width: 80%;
-  row-gap: 15px;
+  width: 100%;
+  row-gap: clamp(10px, 1.5vw, 15px);
 }
 
 .header {
   display: flex;
   width: 100%;
-  gap: 10px;
+  gap: clamp(8px, 1vw, 10px);
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .header__text {
   background-color: var(--cyan);
   color: black;
   width: fit-content;
-  height: 22px;
+  height: clamp(20px, 2vw, 22px);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4px 8px;
+  padding: clamp(3px, 0.5vw, 4px) clamp(6px, 1vw, 8px);
   font-weight: 800;
-  font-size: 12px;
-  line-height: 14px;
+  font-size: clamp(11px, 1.2vw, 12px);
+  line-height: clamp(13px, 1.4vw, 14px);
   color: #0a181b;
   background-color: #30cec2;
   cursor: auto;
@@ -160,9 +163,11 @@ section > h1 {
 .event-title {
   font-style: normal;
   font-weight: 800;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: clamp(16px, 2vw, 20px);
+  line-height: clamp(24px, 2.5vw, 30px);
   color: #fff;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .button__expand {
@@ -173,14 +178,17 @@ section > h1 {
 
 .schedule-container .lecturers {
   width: 100%;
-  font-size: 18px;
+  font-size: clamp(15px, 1.7vw, 18px);
+  line-height: clamp(22px, 2.2vw, 26px);
   color: hsla(0, 0%, 100%, 0.8);
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  row-gap: 10px;
+  row-gap: clamp(8px, 1vw, 10px);
 }
 
 .user-container {
@@ -213,5 +221,110 @@ section > h1 {
   100% {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .schedule {
+    padding: 0 16px;
+  }
+
+  .schedule-type {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 32px 0 24px 0;
+    padding: 0 5%;
+  }
+
+  .schedule-type__button {
+    margin: 0;
+  }
+
+  .schedule-container {
+    gap: 12px;
+  }
+
+  .event-item,
+  .event-item--break {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .event-item {
+    padding: 16px;
+  }
+
+  .schedule-container .time {
+    margin-right: 0;
+    margin-bottom: 8px;
+    width: 100%;
+  }
+
+  .schedule-container .content {
+    width: 100%;
+  }
+
+  .header {
+    gap: 6px;
+  }
+
+  .button__expand {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .schedule {
+    padding: 0 12px;
+  }
+
+  .schedule-menu {
+    width: 100%;
+  }
+
+  .schedule-day {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .schedule-day-button {
+    width: 60px;
+    height: 80px;
+    font-size: 20px;
+    line-height: 26px;
+    margin: 0 4px 8px 4px;
+  }
+
+  .schedule-day-button p {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 4px 8px;
+  }
+
+  .schedule-type {
+    gap: 6px;
+    margin: 24px 0 20px 0;
+  }
+
+  .schedule-type__button {
+    font-size: 12px;
+    line-height: 18px;
+    padding: 6px 10px;
+  }
+
+  .event-item {
+    padding: 12px;
+  }
+
+  .event-title {
+    font-size: 15px;
+    line-height: 22px;
+  }
+
+  .schedule-container .lecturers {
+    font-size: 13px;
+    line-height: 20px;
   }
 }
