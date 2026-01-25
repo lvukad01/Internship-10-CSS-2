@@ -1,6 +1,7 @@
 @import "header.css";
 @import "conference.css";
 @import "lectures.css";
+@import "schedule.css";
 @import "sponsors.css";
 @import "board.css";
 @import "gallery.css";
@@ -19,10 +20,13 @@
 :root {
   --cyan: #30cec2;
 }
+html{
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", Helvetica, sans-serif;
   background-color: rgb(10, 24, 27);
-  color: #ffffff;
+  color: #ffffff;  
 }
 
 a {
