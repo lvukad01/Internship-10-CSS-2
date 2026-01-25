@@ -1,9 +1,13 @@
+header {
+  margin-bottom: clamp(40px, 6vw, 80px);
+}
+
 .header__background-image {
   position: absolute;
   top: 0%;
   left: 0%;
   width: 100%;
-  height: 100%;
+  height: 90vh;
   z-index: 1;
 }
 .header__background-image img {
@@ -17,12 +21,12 @@
   object-fit: cover;
   mask-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 60%,
     rgba(0, 0, 0, 0) 100%
   );
   -webkit-mask-image: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 1) 60%,
     rgba(0, 0, 0, 0) 100%
   );
 }
@@ -251,7 +255,16 @@ h1 {
   }
 }
 
+@media (max-width: 1024px) {
+  .header__background-image {
+    height: 85vh;
+  }
+}
+
 @media (max-width: 768px) {
+  .header__background-image {
+    height: 80vh;
+  }
   .header-container {
     height: 80vh;
     min-height: 600px;
@@ -306,6 +319,10 @@ h1 {
   .header-container {
     height: 70vh;
     min-height: 500px;
+  }
+
+  .header__background-image {
+    height: 50vh;
   }
 
   .header__bottom-content {
