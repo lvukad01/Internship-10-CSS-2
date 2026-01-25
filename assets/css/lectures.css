@@ -194,5 +194,75 @@
   transform: translateX(200px);
   animation: slideInRight ease-out forwards;
   animation-timeline: view();
- animation-range: 100px 300px
+  animation-range: 100px 300px;
+}
+
+@media (max-width: 1180px) {
+  .lectures__block {
+    flex-direction: column;
+  }
+
+  .lectures__block:nth-child(2) {
+    flex-direction: column;
+  }
+
+  .look-and-feel {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .lectures__live {
+    flex-direction: column;
+    padding: 20px;
+    gap: 16px;
+  }
+
+  .lectures__live > img {
+    margin-right: 0;
+    max-width: 100%;
+    max-height: 200px;
+    align-self: center;
+  }
+
+  .lectures__live-content-center {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .lectures__live-content-center > img {
+    max-width: 120px;
+    align-self: flex-start;
+  }
+
+  .lectures__live button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .lectures__live {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .lectures__live > img {
+    max-height: 150px;
+  }
+
+  .lectures__live-content h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .lectures__live-content-center-text h1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .lectures__live-content-center > img {
+    max-width: 100px;
+  }
 }
