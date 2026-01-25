@@ -102,20 +102,37 @@
 
 
 @media (max-width: 764px){
-
-#contact{
-    max-width: 1440px;
-    padding: 60px 23px 270px 23px;
-    margin: auto;
-    position: relative;
-    margin-top: 100px;
-}
-.contact__planes {
+  .content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .image-wrapper {
+    order: -1;        
+    position: static; 
     width: 400px;
-    position: absolute;
-    bottom: 80px;
-    right: 0;
-    z-index: -1;
-}
+    height: 329px;
+  }
+    .benefits {
+    width: 280px;
+    margin:0px 50px; 
+  }
+  .info{
+    font-size:20px;
+    margin-top: 20px;
+  }
+  .info__title {
+    font-size: 22px;
+    width: 100%;
+  }
 
+  .app-info {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .info__icon {
+  width: 40px;
+  height: 40px;
+  left:-20px;
+  top:-12px;
+}
 }
